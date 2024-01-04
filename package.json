@@ -18,6 +18,7 @@
     "vuetify": "^3.4.9"
   },
   "dependencies": {
+    "@vercel/ruby": "^2.0.4",
     "axios": "^1.6.3"
   }
 }
