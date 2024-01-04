@@ -26,7 +26,9 @@ ruby config.ru
 #rbenv install 3.2.2 | rbenv global 3.2.2
 
 # project build
-#npm i
-#bundle install
-#bundle exec rake bormashino:download
-#(cd src && bundle)
+npm i
+bundle update
+bundle install
+bundle clean --force
+bundle exec rake bormashino:download
+(cd src && bundle)
