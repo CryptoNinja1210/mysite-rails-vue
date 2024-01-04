@@ -1,7 +1,8 @@
 #!/usr/bin/bash
 
 cat /etc/os-release
-yum install -y gcc openssl-devel readline-devel zlib-devel make tar libyaml-devel xz curl postgresql-devel
+yum install -y gcc openssl-devel readline-devel zlib-devel make tar libyaml-devel xz curl libpq-dev postgresql-devel postgresql
+ls /usr/pgsql-14/bin/pg_config
 
 # rbenv install
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
