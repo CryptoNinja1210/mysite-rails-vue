@@ -1,4 +1,10 @@
 {
-  "env": {
-  }
+  "version": 2,
+  "builds": [
+    {
+      "src": "config.ru",
+      "use": "@vercel/ruby",
+      "config": { "runtime": "ruby-3.3.0" }
+    }
+  ]
 }
