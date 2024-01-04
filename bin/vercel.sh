@@ -13,10 +13,10 @@ git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-b
 
 # required ruby install
 rbenv rehash
-cat .ruby-version | rbenv install 3.2.2 | rbenv global 3.2.2
+cat .ruby-version | rbenv install 3.2.2 | rbenv local 3.2.2
 
-# project build
-npm i
-bundle
-bundle exec rake bormashino:download
-(cd src && bundle)
+## project build
+#npm i
+#bundle
+#bundle exec rake bormashino:download
+#(cd src && bundle)
