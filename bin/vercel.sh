@@ -1,7 +1,8 @@
 #!/usr/bin/bash
 
 cat /etc/os-release
-yum install -y gcc openssl-devel readline-devel zlib-devel make tar libyaml-devel xz curl libpq-dev postgresql-devel postgresql-14.10
+yum install -y gcc openssl-devel readline-devel zlib-devel make tar libyaml-devel xz curl libpq-dev postgresql-devel14 postgresql14
+amazon-linux-extras enable postgresql14
 ls /usr/pgsql-14/bin/pg_config
 
 # rbenv install
