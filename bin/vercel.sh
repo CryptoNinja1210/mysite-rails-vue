@@ -15,10 +15,6 @@ git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-b
 rbenv rehash
 cat .ruby-version | rbenv install 3.2.2 | rbenv local 3.2.2
 
-# pg config
-sudo apt install libpq-dev
-gem install pg -- --with-pg-config=/path/to/pg_config
-
 ## project build
 #npm i
 #bundle

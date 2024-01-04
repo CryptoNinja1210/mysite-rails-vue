@@ -1,6 +1,7 @@
 {
   "version": 2,
   "buildCommand": "bin/vercel",
+  "installCommand": "gem install pg -- --with-pg-config=/path/to/pg_config",
   "builds": [
     {
       "src": "config.ru",
