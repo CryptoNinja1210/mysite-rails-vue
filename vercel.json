@@ -1,11 +1,24 @@
 {
-  "builds": {
-    "commands": [
-      "rvm install 3.3.0",
-      "rvm use 3.3.0 --default"
-    ]
-  },
+  "version": 2,
+  "builds": [
+    {
+      "src": "config.ru",
+      "use": "@now/ruby",
+      "commands": [
+        "rvm install 3.3.0",
+        "rvm use 3.3.0 --default"
+      ]
+    }
+  ],
+  "routes": [
+    { "handle": "filesystem" },
+    {
+      "src": "/.*",
+      "dest": "config.ru"
+    }
+  ],
   "env": {
+    "RAILS_ENV": "production",
     "RUBY_VERSION": "3.3.0"
   }
 }
