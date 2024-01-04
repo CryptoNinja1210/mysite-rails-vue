@@ -4,10 +4,6 @@
     {
       "src": "bin/vercel.sh",
       "use": "@vercel/static-build"
-    },
-    {
-      "src": "config.ru",
-      "use": "@vercel/ruby"
     }
   ]
 }
