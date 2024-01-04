@@ -1,4 +1,11 @@
 {
   "version": 2,
-  "buildCommand": "bin/vercel"
+  "buildCommand": "bin/vercel",
+  "builds": [
+    {
+      "src": "config.ru",
+      "use": "@vercel/ruby",
+      "config": { "runtime": "ruby3.3.0" }
+    }
+  ]
 }

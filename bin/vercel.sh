@@ -2,18 +2,15 @@
 
 # rbenv install
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
-(cd ~/.rbenv && src/configure && make -C src)
-echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
-~/.rbenv/bin/rbenv init
-echo 'eval "$(rbenv init - bash)"' >> ~/.bash_profile
-source ~/.bash_profile
-
-mkdir -p "$(rbenv root)"/plugins
-git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
-
-# required ruby install
-rbenv rehash
-cat .ruby-version | rbenv install 3.2.2 | rbenv local 3.2.2
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
+git clone https://github.com/rbenv/rbenv-vars.git ~/.rbenv/plugins/rbenv-vars
+exec $SHELL
+rbenv install 3.3.0
+rbenv global 3.3.0
+ruby -v
 
 ## project build
 #npm i
