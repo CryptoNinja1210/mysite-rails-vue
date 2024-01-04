@@ -17,13 +17,7 @@ rbenv rehash
 rbenv install 3.2.2
 rbenv global 3.2.2
 rbenv local 3.2.2
-
 ruby --version
-
-cd ..
-ruby config.ru
-
-#rbenv install 3.2.2 | rbenv global 3.2.2
 
 # project build
 #sudo apt install libpq-dev
@@ -37,3 +31,6 @@ bundle install
 bundle clean --force
 bundle exec rake bormashino:download
 (cd src && bundle)
+
+cd ..
+ruby config.ru
