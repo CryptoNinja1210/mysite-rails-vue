@@ -1,7 +1,9 @@
 #!/usr/bin/bash
 
 yum install -y gcc openssl-devel readline-devel zlib-devel make tar libyaml-devel xz curl libpq-dev postgresql-devel
-Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+cat /etc/os-release
+ver
+sw_vers
 choco install postgresql
 # rbenv install
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
