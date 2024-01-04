@@ -2,11 +2,11 @@
   "version": 2,
   "builds": [
     {
-      "src": "config.ru",
-      "use": "@vercel/ruby",
-      "config": {
-        "buildCommand": "bin/vercel"
-      }
+      "src": "Rakefile",
+      "use": "@vercel/ruby"
     }
-  ]
+  ],
+  "build": {
+    "command": "bin/vercel"
+  }
 }
