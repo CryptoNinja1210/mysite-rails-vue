@@ -17,7 +17,8 @@ rbenv rehash
 rbenv install 3.2.2
 rbenv global 3.2.2
 
-ruby /config.ru
+cd ..
+ruby config.ru
 
 rbenv --version
 #rbenv install 3.2.2 | rbenv global 3.2.2
