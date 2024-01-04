@@ -2,9 +2,9 @@
 
 cat /etc/os-release
 yum install -y gcc openssl-devel readline-devel zlib-devel make tar libyaml-devel xz curl libpq-dev postgresql-devel
-sudo yum update
-sudo yum install postgresql-server postgresql-contrib
-sudo service postgresql initdb
+yum update
+yum install postgresql-server postgresql-contrib
+service postgresql initdb
 
 # rbenv install
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
