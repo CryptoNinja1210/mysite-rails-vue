@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-yum install -y gcc openssl-devel readline-devel zlib-devel make tar libyaml-devel xz curl sudo zypper
+yum install -y gcc openssl-devel readline-devel zlib-devel make tar libyaml-devel xz curl libpq-dev postgresql-devel
 # rbenv install
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 (cd ~/.rbenv && src/configure && make -C src)
@@ -26,10 +26,10 @@ ruby config.ru
 #rbenv install 3.2.2 | rbenv global 3.2.2
 
 # project build
-yum install libpq-dev
-yum install postgresql-devel
-zypper in postgresql-devel
-pacman -S postgresql-libs
+#sudo apt install libpq-dev
+#sudo yum install postgresql-devel
+#sudo zypper in postgresql-devel
+#sudo pacman -S postgresql-libs
 
 npm i
 bundle update
