@@ -1,3 +1,11 @@
 {
-  "buildCommand": "vercel-bin"
+  "build": {
+    "env": {
+      "RUBY_VERSION": "3.3.0"
+    },
+    "commands": [
+      "rvm install 3.3.0",
+      "rvm use 3.3.0 --default"
+    ]
+  }
 }
