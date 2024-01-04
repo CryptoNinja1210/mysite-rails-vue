@@ -27,7 +27,7 @@ ruby --version
 
 #npm i
 #bundle update
-bundle install
+bundle update
 #bundle exec rake bormashino:download
 #(cd src && bundle)
 
