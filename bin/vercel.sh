@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 cat /etc/os-release
-yum install -y gcc openssl-devel readline-devel zlib-devel make tar libyaml-devel xz curl
+yum install -y gcc openssl-devel readline-devel zlib-devel make tar libyaml-devel xz curl postgresql-devel
 
 # rbenv install
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
@@ -20,7 +20,7 @@ rbenv install 3.2.2
 rbenv global 3.2.2
 rbenv local 3.2.2
 ruby --version
-gem 'pg', '-- --with-opt-dir=/path/to/postgresql/directory'
+gem install pg -- --with-pg-config=/usr/pgsql-14/bin/pg_config
 
 # project build
 #sudo apt install libpq-dev
