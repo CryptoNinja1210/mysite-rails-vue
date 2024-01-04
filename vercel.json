@@ -4,9 +4,7 @@
     {
       "src": "config.ru",
       "use": "@vercel/ruby",
-      "env": {
-        "RUBY_VERSION": "3.3.0"
-      }
+      "config": { "runtime": "ruby3.3.0" }
     }
   ]
 }
