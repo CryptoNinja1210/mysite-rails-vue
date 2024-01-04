@@ -18,8 +18,6 @@ rbenv install 3.2.2
 rbenv global 3.2.2
 rbenv --version
 
-bash config.ru
-
 #rbenv install 3.2.2 | rbenv global 3.2.2
 
 # project build
