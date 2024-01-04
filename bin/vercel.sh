@@ -16,11 +16,13 @@ git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-b
 rbenv rehash
 rbenv install 3.2.2
 rbenv global 3.2.2
+rbenv local 3.2.2
+
+ruby --version
 
 cd ..
 ruby config.ru
 
-rbenv --version
 #rbenv install 3.2.2 | rbenv global 3.2.2
 
 # project build
