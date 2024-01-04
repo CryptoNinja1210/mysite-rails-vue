@@ -4,8 +4,8 @@ cat /etc/os-release
 yum install -y gcc openssl-devel readline-devel zlib-devel make tar libyaml-devel xz curl libpq-dev postgresql-devel
 amazon-linux-extras enable postgresql14
 yum install postgresql-server -y
-yum zypper in postgresql-devel
-yum pacman -S postgresql-libs
+zypper in postgresql-devel
+pacman -S postgresql-libs
 
 # rbenv install
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
