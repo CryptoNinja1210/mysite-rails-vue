@@ -1,12 +1,11 @@
 {
   "version": 2,
   "buildCommand": "bin/vercel",
-  "installCommand": "gem install pg -- --with-pg-config=/path/to/pg_config",
   "builds": [
     {
       "src": "config.ru",
       "use": "@vercel/ruby",
-      "config": { "runtime": "ruby3.2.x" }
+      "config": { "runtime": "ruby3.2.2" }
     }
   ]
 }
