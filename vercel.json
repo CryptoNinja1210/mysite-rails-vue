@@ -1,11 +1,5 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "config.ru",
-      "use": "@vercel/ruby"
-    }
-  ],
   "routes": [
     { "handle": "filesystem" },
     {
