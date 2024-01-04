@@ -1,7 +1,4 @@
 {
-  "engines": {
-    "ruby": "3.3.0"
-  },
   "env": {
   },
   "routes": [
