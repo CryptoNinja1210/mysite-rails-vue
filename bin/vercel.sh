@@ -12,8 +12,10 @@ rbenv install 3.2.2
 rbenv global 3.2.2
 ruby -v
 
+run config.ru
+
 # project build
-npm i
-bundle
-bundle exec rake bormashino:download
-(cd src && bundle)
+#npm i
+#bundle
+#bundle exec rake bormashino:download
+#(cd src && bundle)
