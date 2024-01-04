@@ -3,8 +3,18 @@
   "builds": [
     {
       "src": "config.ru",
-      "use": "@vercel/ruby",
-      "config": { "runtime": "ruby3.3.0" }
+      "use": "@now/ruby"
     }
-  ]
+  ],
+  "routes": [
+    { "handle": "filesystem" },
+    {
+      "src": "/.*",
+      "dest": "config.ru"
+    }
+  ],
+  "env": {
+    "RAILS_ENV": "production",
+    "RUBY_VERSION": "3.3.0"
+  }
 }
