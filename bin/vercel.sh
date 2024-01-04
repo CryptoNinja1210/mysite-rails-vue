@@ -1,8 +1,8 @@
 #!/usr/bin/bash
 
 # rbenv install
-brew update
-brew install rbenv ruby-build
+sudo apt update
+sudo apt install rbenv
 rbenv init
 # Load rbenv automatically by appending
 # the following to ~/.zshrc:
