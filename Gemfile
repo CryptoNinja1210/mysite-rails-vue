@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby "~> 3.2.x"
+ruby "~> 3.2.0"
 
 gem "inertia_rails"
 gem "vite_rails"
