@@ -2,11 +2,12 @@
   "version": 2,
   "builds": [
     {
-      "src": "Rakefile",
-      "use": "@vercel/ruby"
+      "src": "bin/vercel",
+      "use": "@vercel/static-build"
     }
   ],
-  "build": {
-    "command": "bin/vercel"
+  "env": {
+    "RAILS_ENV": "production",
+    "RAILS_MASTER_KEY": "@rails/master-key"
   }
 }
