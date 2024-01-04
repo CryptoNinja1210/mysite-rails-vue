@@ -1,11 +1,4 @@
 {
   "env": {
-  },
-  "routes": [
-    { "src": "/*" },
-    { "handle": "filesystem" }
-  ],
-  "builds": [
-    { "src": "public/**/*", "use": "@vercel/static" }
-  ]
+  }
 }
