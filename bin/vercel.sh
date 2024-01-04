@@ -2,14 +2,12 @@
 
 # rbenv install
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
-(cd ~/.rbenv && src/configure && make -C src)
-echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
-~/.rbenv/bin/rbenv init
-echo 'eval "$(rbenv init - bash)"' >> ~/.bash_profile
-source ~/.bash_profile
-
-mkdir -p "$(rbenv root)"/plugins
-git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
+git clone https://github.com/rbenv/rbenv-vars.git ~/.rbenv/plugins/rbenv-vars
+exec $SHELL
 
 # required ruby install
 rbenv rehash
