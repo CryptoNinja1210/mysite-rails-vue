@@ -3,7 +3,10 @@
   "builds": [
     {
       "src": "config.ru",
-      "use": "@vercel/ruby"
+      "use": "@vercel/ruby",
+      "env": {
+        "RUBY_VERSION": "3.3.0"
+      }
     }
   ]
 }
