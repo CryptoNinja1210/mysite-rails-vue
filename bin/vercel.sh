@@ -8,8 +8,8 @@ git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
 git clone https://github.com/rbenv/rbenv-vars.git ~/.rbenv/plugins/rbenv-vars
 exec $SHELL
-rbenv install 3.3.0
-rbenv global 3.3.0
+rbenv install 3.2.2
+rbenv global 3.2.2
 ruby -v
 
 ## project build
