@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "outputDirectory": "public",
   "builds": [
     {
       "src": "bin/vercel.sh",
