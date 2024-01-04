@@ -1,8 +1,9 @@
 #!/usr/bin/bash
 
 # rbenv install
-sudo apt update
-sudo apt install rbenv
+git clone https://github.com/rbenv/rbenv-win.git %USERPROFILE%/.rbenv
+setx PATH "%USERPROFILE%\.rbenv\bin;%USERPROFILE%\.rbenv\shims;%PATH%"
+
 rbenv init
 # Load rbenv automatically by appending
 # the following to ~/.zshrc:
