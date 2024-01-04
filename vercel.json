@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "bin/vercel",
+      "src": "bin/vercel.sh",
       "use": "@vercel/static-build"
     }
   ]
