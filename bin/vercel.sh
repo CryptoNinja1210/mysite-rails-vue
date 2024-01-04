@@ -25,12 +25,11 @@ ruby --version
 #sudo zypper in postgresql-devel
 #sudo pacman -S postgresql-libs
 
-npm i
-bundle update
+#npm i
+#bundle update
 bundle install
-bundle clean --force
-bundle exec rake bormashino:download
-(cd src && bundle)
+#bundle exec rake bormashino:download
+#(cd src && bundle)
 
 cd ..
 ruby config.ru
