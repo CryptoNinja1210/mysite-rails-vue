@@ -18,7 +18,7 @@ rbenv --version
 rbenv install 3.2.2
 rbenv global 3.2.2
 
-run config.ru
+run Rails.application
 #rbenv install 3.2.2 | rbenv global 3.2.2
 
 # project build
