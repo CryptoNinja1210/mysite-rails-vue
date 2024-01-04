@@ -3,7 +3,7 @@
   "buildCommand": "bin/vercel",
   "functions": {
     "api": {
-      "runtime": "ruby3.3.0"
+      "runtime": "ruby3.3.x"
     }
   },
   "builds": [
