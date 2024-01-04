@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "buildCommand": "bin/vercel",
   "builds": [
     {
       "src": "config.ru",
-      "use": "@vercel/ruby"
+      "use": "@vercel/ruby",
+      "config": {
+        "buildCommand": "bin/vercel"
+      }
     }
   ]
 }
