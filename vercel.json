@@ -1,11 +1,11 @@
 {
-  "build": {
-    "env": {
-      "RUBY_VERSION": "3.3.0"
-    }
+  "builds": {
+    "commands": [
+      "rvm install 3.3.0",
+      "rvm use 3.3.0 --default"
+    ]
   },
-  "commands": [
-    "rvm install 3.3.0",
-    "rvm use 3.3.0 --default"
-  ]
+  "env": {
+    "RUBY_VERSION": "3.3.0"
+  }
 }
