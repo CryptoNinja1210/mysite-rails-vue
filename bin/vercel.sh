@@ -36,4 +36,4 @@ gem install pg -- --with-pg-include=/path/to/libpq-fe.h/ --with-pg-lib=/path/to/
 bundle update
 #bundle exec rake bormashino:download
 #(cd src && bundle)
-
+rails s
