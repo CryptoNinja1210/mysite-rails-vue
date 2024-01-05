@@ -5,8 +5,6 @@ yum update
 yum install -y zypper pacman gcc openssl-devel readline-devel zlib-devel make tar libyaml-devel xz curl libpq-dev postgresql-devel
 amazon-linux-extras enable postgresql14
 yum install postgresql-server -y
-zypper in postgresql-devel
-pacman -S postgresql-libs
 
 # rbenv install
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
@@ -39,5 +37,3 @@ bundle update
 #bundle exec rake bormashino:download
 #(cd src && bundle)
 
-cd ..
-ruby config.ru
