@@ -25,15 +25,9 @@ rbenv local 3.2.2
 ruby --version
 gem install pg -- --with-pg-include=/path/to/libpq-fe.h/ --with-pg-lib=/path/to/libpq.so/
 
-# project build
-#sudo apt install libpq-dev
-#sudo yum install postgresql-devel
-#sudo zypper in postgresql-devel
-#sudo pacman -S postgresql-libs
-
 #npm i
 #bundle update
-bundle update
+bundle install
 #bundle exec rake bormashino:download
 #(cd src && bundle)
-rails s
+#rails s
