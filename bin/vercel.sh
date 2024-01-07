@@ -30,4 +30,4 @@ bundle install
 ruby --version
 #bundle exec rake bormashino:download
 #(cd src && bundle)
-rails s
+#rails s -e production
