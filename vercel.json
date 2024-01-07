@@ -3,8 +3,8 @@
   "outputDirectory": "dist",
   "builds": [
     {
-      "src": "config.ru",
-      "use": "@vercel/ruby"
+      "src": "bin/vercel.sh",
+      "use": "@vercel/static-build"
     }
   ]
 }

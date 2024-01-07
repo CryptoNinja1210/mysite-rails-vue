@@ -28,6 +28,6 @@ gem install pg -- --with-pg-include=/path/to/libpq-fe.h/ --with-pg-lib=/path/to/
 #bundle update
 bundle install
 ruby --version
-#bundle exec rake bormashino:download
-#(cd src && bundle)
+bundle exec rake bormashino:download
+(cd src && bundle)
 #rails s -e production
