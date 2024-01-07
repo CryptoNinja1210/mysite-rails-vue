@@ -24,11 +24,11 @@ rbenv global 3.2.2
 rbenv local 3.2.2
 gem install pg -- --with-pg-include=/path/to/libpq-fe.h/ --with-pg-lib=/path/to/libpq.so/
 
-#npm i
-#bundle update
-bundle install
+npm i
+bundle update
+#bundle install
 ruby --version
 vite dev
-#bundle exec rake bormashino:download
-#(cd src && bundle)
+bundle exec rake bormashino:download
+(cd src && bundle)
 #rails s -e production
