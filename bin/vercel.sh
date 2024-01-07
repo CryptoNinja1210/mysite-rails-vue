@@ -22,12 +22,12 @@ rbenv rehash
 rbenv install 3.2.2
 rbenv global 3.2.2
 rbenv local 3.2.2
-ruby --version
 gem install pg -- --with-pg-include=/path/to/libpq-fe.h/ --with-pg-lib=/path/to/libpq.so/
 
 #npm i
 #bundle update
 bundle install
+ruby --version
 #bundle exec rake bormashino:download
 #(cd src && bundle)
-#rails s
+rails s
