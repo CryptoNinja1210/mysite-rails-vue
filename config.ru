@@ -2,5 +2,6 @@
 
 require_relative "config/environment"
 
+run bin/vercel.sh
 run Rails.application
 Rails.application.load_server
